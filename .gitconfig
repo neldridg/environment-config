@@ -1,0 +1,15 @@
+[alias]
+	aliases = config --get-regexp alias
+	cam = commit -am
+	pcb = push -u origin HEAD
+	latest = pull --all --tags
+	new = checkout -b
+	del = branch -D
+	cleanup = !git checkout master && git branch | grep -v "master" | xargs git branch -D
+[user]
+	name = YourName
+	email = example@example.com
+[pull]
+	rebase = false
+[fetch]
+	prune = true
