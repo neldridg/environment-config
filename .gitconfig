@@ -5,7 +5,7 @@
 	latest = pull --all --tags
 	new = checkout -b
 	del = branch -D
-	cleanup = !git checkout master && git branch | grep -v "master" | xargs git branch -D
+	cleanup = !git checkout main && git branch | grep -v "main" | xargs git branch -D
 [user]
 	name = YourName
 	email = example@example.com
