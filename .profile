@@ -1,0 +1,1 @@
+alias brewupdate="brew update && brew upgrade"
